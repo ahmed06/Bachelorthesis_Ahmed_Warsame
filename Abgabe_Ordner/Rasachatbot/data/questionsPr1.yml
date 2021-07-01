@@ -1,0 +1,671 @@
+version: "2.0"
+nlu:
+
+
+- intent: faq/question_Inhalt
+  examples: |
+    - Was ist die [Gliederung der Vorlesung](theme:Überblick)?
+    - Inhalt der Vorlesung [Inhalt](theme:inhalt)?
+    - [Gliederung der Vorlesung](theme:Überblick)?
+    - [Inhalt](theme:inhalt) roter Faden?
+    - Was sind die [übungen]{"entity": "theme", "value": "Prüfungsvoraussetzung"}?
+    - Gibt es eine [zulassung]{"entity": "theme", "value": "Prüfungsvoraussetzung"}?
+    - Gibt es [tests]{"entity": "theme", "value": "Prüfungsvoraussetzung"}?
+    - [zulassung]{"entity": "theme", "value": "Prüfungsvoraussetzung"}
+
+- intent: faq/question_Übungen
+  examples: |
+    - Was ist die [Gliederung der Vorlesung](theme:Überblick)?
+    - Inhalt der Vorlesung [Inhalt](theme:Inhalt)?
+    - [Gliederung der Vorlesung](theme:Überblick)?
+    - [Inhalt](theme:Überblick) roter Faden?
+
+
+- intent: faq/question_pruefungsvoraussetzung
+  examples: |
+    - Was ist die [zulassung]{"entity": "theme", "value": "Prüfungsvoraussetzung"} in pr1?
+    - Wie kann ich bei der [Prüfung]{"entity": "theme", "value": "Prüfungsvoraussetzung"} teilnehmen?
+    - Wie kann ich bei der [klausur]{"entity": "theme", "value": "Prüfungsvoraussetzung"} teilnehmen?
+    - Was ist die [Prüfungsvoraussetzung](theme)?
+    - [Prüfungsvoraussetzung](theme)
+- intent: faq/Fragen
+  examples: |
+    - Wie kann ich den [Prof]{"entity": "theme", "value": "Fragen"} erreichen?
+    - Wie lautet die [Email]{"entity": "theme", "value": "Fragen"} des Professors?
+    - Wie kann ich den [Prof]{"entity": "theme", "value": "Fragen"} fragen stellen?
+    - Wie kann ich den [Prof]{"entity": "theme", "value": "Fragen"} um Hilfe bitten?
+- intent: faq/Buch
+  examples: |
+    - Welche [Literatur]{"entity": "theme", "value": "Buch"} soll ich lesen?
+    - Welches [Buch](theme) soll ich lesen?
+    - Gibt es [Literatur]{"entity": "theme", "value": "Buch"}  für die Vorlesung?
+    - Gibt es [Bücher]{"entity": "theme", "value": "Buch"}  für die Vorlesung?
+    - Welche [Bücher]{"entity": "theme", "value": "Buch"}  soll ich lesen?
+    - [Buch](theme) 
+    - Welche [Bücher]{"entity": "theme", "value": "Buch"} kann ich lesen?
+
+
+- intent: faq/question_organisatorisches
+  examples: |
+    - Was gibt es [Organisatorisches]{"entity": "theme", "value": "Organisatorisches"}?
+    - Was gibt es [Organisatorisch]{"entity": "theme", "value": "Organisatorisches"} zu wissen?
+    - [Organisatorisch]{"entity": "theme", "value": "Organisatorisches"}
+
+
+- intent: faq/Java
+  examples: |
+    - Was ist die Programmiersprache [Java]{"entity": "theme", "value": "Programmiersprache"}?
+    - Was ist [Java]{"entity": "theme", "value": "Programmiersprache"}?
+    - Was sind die Nachteile von [Java]{"entity": "theme", "value": "Java (aber..."})?
+    - Was ist der Nachteile von der Programmiersprache [Java]{"entity": "theme", "value": "Java (aber..."}
+    - Was passiert in einem selbst [geschriebenen Programm]{"entity": "theme", "value": "geschriebenen Programm?"}?
+    - einführung Die [Programmiersprache](theme) Java?
+
+
+- intent: faq/Java_warum
+  examples: |
+    - Die Programmiersprache [Java- warum]{"entity": "theme", "value": "Java - warum"}?
+    - [Warum Java]{"entity": "theme", "value": "Java - warum"} nutzen?
+    - Was sind die [Vorteile von Java]{"entity": "theme", "value": "Java - warum"} Programmiersprache]?
+    - Was sind die [Vorteile von Java]{"entity": "theme", "value": "Java - warum"}?
+
+
+- intent: faq/computer
+  examples: |
+    - Wie funktioniert ein [Computer](theme)?
+    - Was passiert in einem [Computer](theme)?
+    - [Computer](theme)?
+- intent: faq/Algorithmenbegriff
+  examples: |
+    - Was sind [Algorithmen](theme)?
+    - Was ist ein [Algorithmus]{"entity": "theme", "value": "Algorithmen"}?
+    - [Algorithmus]{"entity": "theme", "value": "Algorithmen"}?
+    - [Aktivitätsdiagramm](theme)?
+    - Was ist ein [Aktivitätsdiagramm](theme)?
+    - Was macht ein [Aktivitätsdiagramm](theme)?
+    - [Pseudocode](theme)?
+    - Was ist ein [Pseudocode](theme)?
+    - Was macht ein [Pseudocode](theme)?
+
+
+- intent: faq/Zahlensystem
+  examples: |
+    - Was sind [Zahlensysteme](theme:Zahlensysteme)?
+    - Gibt es  [Zahlensysteme](theme:Zahlensysteme)? 
+    - Wie [wandelt](theme:Umwandlung) man um?
+    - Was ist [Binär](theme:Zahlensysteme)?
+    - Was ist [Dezimalsystem](theme:Zahlensysteme)?
+    - Was ist [Hexa](theme:Zahlensysteme)?
+    - [Binär](theme:Zahlensysteme)?
+    - [Dezimalsystem](theme:Zahlensysteme)?
+    - [Hexa](theme:Zahlensysteme)?
+    - [Zahlensysteme und Umwandlung](theme:Zahlensysteme)
+
+- intent: faq/Aktivitätdiagramm
+  examples: |
+    - [Aktivitätsdiagramm](theme:Aktivitätsdiagramm)?
+    - Was ist ein [Aktivitätsdiagramm](theme:Aktivitätsdiagramm)?
+    - Was macht ein [Aktivitätsdiagramm](theme:Aktivitätsdiagramm)?
+
+
+- intent: faq/Pseudocode
+  examples: |
+    - [Pseudocode](theme:Pseudocode)?
+    - Was ist ein [Pseudocode](theme:Pseudocode)?
+    - Was macht ein [Pseudocode](theme:Pseudocode)?
+
+- intent: faq/Pseudocode
+  examples: |
+    - Wie installiert man Java [Eclipse](theme:Eclipse)?
+    - Wie nutze ich die [JDK](theme:JDK)?
+    - [Eclipse](theme:Eclipse)
+    - [JDK](theme:JDK)
+
+- intent: faq/Erstes_Projekt
+  examples: |
+    - Was ist [ein erstes Java Projekt](theme:JAVA Projekt)?
+    - [ein erstes Java Projekt](theme:JAVA Projekt)?
+    - Das erste [Java Projekt](theme:JAVA Projekt)
+
+- intent: faq/Namenskonventionen
+  examples: |
+    - Was sind [Namenskonventionen](theme:Namenskonventionen)?
+    - Was ist eine [Namenskonventionen](theme:Namenskonventionen)?
+    - [NamensKonventionen](theme:Namenskonventionen)?
+
+- intent: faq/Namenskonventionen
+  examples: |
+    - Was sind [Namenskonventionen](theme:Namenskonventionen)?
+    - Was ist eine [Namenskonventionen](theme:Namenskonventionen)?
+    - [NamensKonventionen](theme:Namenskonventionen)?
+
+- intent: faq/Kommentare
+  examples: |
+    - Was sind [Kommentare](theme:Kommentare)?
+    - Was ist ein [Kommentar](theme:Kommentar)?
+    - [Kommentare](theme:Kommentar)?
+    - [Kommentare - warum](theme:Kommentare - warum)?
+    - [Warum braucht man Kommentare](theme:Kommentare - warum)?
+    - [Kommentare (wie?)](theme:Kommentare (wie?))
+
+- intent: faq/Modularisierung
+  examples: |
+    - Was sind [Modularisierungen](theme:Modularisierung)?
+    - Was ist ein [Modularisierung](theme:Modularisierung)?
+    - [Modularisierung](theme:Modularisierung)?
+    - [Modularisierung (Definition von Paketen)](theme:Modularisierung(Definition von Paketen))?
+    - [Modularisierung (Zugriff auf Pakete)](theme:Modularisierung(Zugriff auf Pakete))?
+    - [Zugriff auf Pakete](theme:Modularisierung(Zugriff auf Pakete))?
+    - [Definition von Paketen](theme:Modularisierung(Definition von Paketen))
+
+
+- intent: faq/Scanner
+  examples: |
+    - Kann man Texte [Eingeben](theme:Ein-) und Ausgabe mit java?
+    - Wie kann man den [Scanner](theme:Ein-) nutzen?
+    - Was ist ein [Scanner](theme:Ein-)?
+    - Was sind [Scanner](theme:Ein-)
+    - Wie kann ich Texte über Terminal [Eingeben](theme:Ein-) lassen?
+    - [Eingeben](theme:Ein-)
+    - [Scanner](theme:Ein-)
+    - [Ausgabe](theme:Ein-)
+    - [Ein-Ausgabe Anweisung (mit Hilfsfunktionen)](theme:Ein-Ausgabe Anweisung)
+
+- intent: faq/Schlüsselwörter
+  examples: |
+    - Welche [Schlüsselwörter](theme:schlüsselwörter) gibt es?
+    - Was für [Schlüsselwörter](theme:schlüsselwörter) existieren?
+    - [Schlüsselwort](theme:schlüsselwörter)
+
+- intent: faq/Ausdrücke
+  examples: |
+    - Was ist ein [Ausdruck](theme:Ausdrücke)?
+    - [Ausdruck](theme:Ausdrücke)
+    - Was sind [Ausdrücke](theme:Ausdrücke)?
+    - [Ausdrücke](theme:Ausdrücke) 
+
+- intent: faq/Token
+  examples: |
+    - Was ist ein [Token](theme:Token)?
+    - Was sind [Token](theme:Token)?
+    - [Token](theme:Token)
+
+
+- intent: faq/Literale
+  examples: |
+    - Was ist ein [Literal](theme:Literale)?
+    - Was sind [Literale](theme:Literale)
+    - [Literale](theme:Literale)
+
+- intent: faq/Elrementare_Datentypen
+  examples: |
+    - Was ist ein [Elementarer Datentyp](theme:elementare datentypen)?
+    - Was sind [Elementare Datentyp](theme:elementare datentypen)?
+    - [Elementarer Datentyp](theme:elementare datentypen)
+
+- intent: faq/Variablen
+  examples: |
+    - Was ist ein [Variable](theme:variablen)?
+    - Was sind [Variablen](theme:variablen)
+    - [Variable](theme:variablen)
+
+
+- intent: faq/Konstanten
+  examples: |
+    - Was ist ein [Konstante](theme:konstanten)?
+    - Was sind [Konstanten](theme:konstanten)
+    - [Konstante](theme:konstanten)
+
+- intent: faq/String
+  examples: |
+    - Was ist ein [String](theme:strings)?
+    - Was sind [Strings](theme:strings)
+    - [strings](theme:strings)
+
+- intent: faq/Auswertungsreihenfolge
+  examples: |
+    - Was lautet die [Auswertungsreihenfolge](theme:Auswertungsreihenfolge) von Ausdrücken?
+    - Was ist die [Auswertungsreihenfolge](theme:Auswertungsreihenfolge)
+    - [Auswertungsreihenfolge](theme:Auswertungsreihenfolge)
+    - Wie werden Ausdrücke [ausgewertet](theme:Auswertungsreihenfolge)
+
+- intent: faq/Auswertungsreihenfolge
+  examples: |
+    - Was lautet die [Auswertungsreihenfolge](theme:auswertungsreihenfolge) von Ausdrücken?
+    - Was ist die [Auswertungsreihenfolge](theme:auswertungsreihenfolge)
+    - [Auswertungsreihenfolge](theme:Auswertungsreihenfolge)
+    - Wie werden Ausdrücke [ausgewertet](theme:Auswertungsreihenfolge)
+
+- intent: faq/unterschiedluichen_Datentypen
+  examples: |
+    - Wie funktioniert das rechnen mit [unterschiedlichen Datentypen](theme:unterschiedlichen datentypen)?
+    - Rechnen [unterschiedlichen Datentypen](theme:unterschiedlichen datentypen)]
+    - Wie rechnet man mit [unterschiedlichen Datentypen](theme:unterschiedlichen datentypen)
+
+
+
+- intent: faq/Anweisungen
+  examples: |
+    - Was ist eine [Anweisungen](theme:Anweisung)
+    - [Anweisungen](theme:Anweisungen)
+    - Wie sind [Anweisungen](theme:Anweisungen)
+
+
+
+- intent: faq/Operatoren
+  examples: |
+    - Was ist [inkrement](theme:operatoren)?
+    - Wie [Inkrementiert](theme:operatoren) man?
+    - [inkrement](theme:operatoren)
+    - Wie [zählt man hoch](theme:operatoren)?
+    - Was ist [dekrement](theme:operatoren)?
+    - Wie [dekrementiert](theme:operatoren) man?
+    - [dekrement](theme:operatoren)
+    - Wie [zählt man runter](theme:operatoren)?
+    - Was ist ein [Präfix](theme:operatoren)?
+    - [Präfix](theme:operatoren)
+    - Was ist ein [Postfix](theme:operatoren)?
+    - [Postfix](theme:operatoren)
+
+
+- intent: faq/Bitweise_Operatoren
+  examples: |
+    - Was ist ein [Bitweise Operatoren](theme:bitweise operatoren)?
+    - Was sind [Bitweise Operatoren](theme:bitweise operatoren)
+    - [Bitweise Operator](theme:bitweise operatoren)
+    - Was sind [Bit Operatoren](theme:bitweise operatoren)
+    - Was ist eine [Bit Operatoren](theme:bitweise operatoren)
+    - [OD- [ODER OR](theme:bitweise operatoren)
+    - [UND AND](theme:bitweise operatoren)
+    - [NICHT NOT](theme:bitweise operatoren)
+    - [ODER XOR](theme:bitweise operatoren)
+    - [Verschiebung nach links SHIFT LEFT](theme:bitweise operatoren)
+    - [Verschiebung nach rechts SHIFT RIGHT](theme:bitweise operatoren)
+    - Was ist Bitweise [ODER OR](theme:bitweise operatoren)?
+    - Was ist Bitweise [UND AND](theme:bitweise operatoren)?
+    - Was ist Bitweise [NICHT NOT](theme:bitweise operatoren)?
+    - Was ist Bitweise ausschließendes oder [XOR](theme:bitweise operatoren)?
+    - Was ist Bitweise [Verschiebung nach links SHIFT LEFT](theme:bitweise operatoren)?
+    - Was ist Bitweise [Verschiebung nach rechts SHIFT RIGHT](theme:bitweise operatoren)?
+
+- intent: faq/Schleifen
+  examples: |
+    - Was ist eine [Schleife](theme:schleifen)?
+    - Was sind [Schleifen](theme:schleifen)?
+    - Welche [Schleifen](theme:schleifen) gibt es?
+    - [Schleifen](theme:schleifen)
+
+- intent: faq/Schleifen(for)
+  examples: |
+    - Was ist eine [for](theme:for)) Schleife?
+    - Was sind [for](theme:for)) Schleifen?
+    - [for](theme:for)) Schleifen?
+    - [for](theme:for))
+
+- intent: faq/Schleifen(For each)
+  examples: |
+    - Was ist eine [For each](theme:for each) Schleife?
+    - Was sind [For each](theme:for each) Schleifen
+    - [For each](theme:for each)?
+
+
+- intent: faq/Schleifen(do while)
+  examples: |
+    - Was ist eine [do while](theme:do-while) Schleife?
+    - Was sind [do while](theme:do-while) Schleifen
+    - [do while](theme:do-while)?
+
+
+- intent: faq/Schleifen(do while)
+  examples: |
+    - Was ist eine [while](theme:while) Schleife?
+    - Was sind [while](theme:do while) Schleifen
+    - [while](theme:while)?
+
+- intent: faq/Fallunterscheidungen
+  examples: |
+    - Was ist eine [Fallunterscheidung](theme:fallunterscheidungen) Anweisung?
+    - Was sind [Fallunterscheidungen](theme:fallunterscheidungen) Anweisungen?
+    - [Fallunterscheidungen](theme:fallunterscheidungen)?
+    - Was ist [Fallunterscheidungen](theme:fallunterscheidungen)?
+
+- intent: faq/Fallunterscheidungen(if-else)
+  examples: |
+    - Was ist eine [if-else](theme:if-else) Anweisung?
+    - Was ist eine [if else](theme:if-else) Anweisung?
+    - Was sind [if else](theme:if-else) Anweisungen?
+    - Was sind [if-else](theme:if-else) Anweisungen?
+    - [if else](theme:if-else)?
+    - [if-else](theme:if-else)?
+    - Was ist [if else](theme:if-else)?
+
+- intent: faq/Fallunterscheidungen(switch_case_?-operator)
+  examples: |
+    - Was ist eine [switch case](theme:switch-case) Anweisung?
+    - Was ist eine [switch-case](theme:switch-case) Anweisung?    
+    - Was sind [switch case](theme:switch-case) Anweisungen?
+    - Was sind [switch-case](theme:switch-case) Anweisungen?
+    - [switch case](theme:switch-case)?
+    - [switch-case](theme:switch-case)?
+    - Was ist [switch case](theme:switch-case)?
+    - Was ist eine [? Operator](theme:?-Operator) Anweisung?
+    - Was ist eine [?-Operator](theme:?-Operator) Anweisung?
+    - Was sind [? Operator](theme:?-Operator) Anweisungen?
+    - Was sind [?-Operator](theme:?-Operator) Anweisungen?
+    - [? Operator](theme:?-Operator)?
+    - [?-Operator](theme:?-Operator)?
+    - Was ist [? Operator](theme:?-Operator)?
+    - Was ist [?-Operator](theme:?-Operator)?
+
+
+- intent: faq/arrays
+  examples: |
+    - Was sind [arrays](theme:arrays)?
+    - Was ist ein [array](theme:arrays)?
+    - [arrays](theme:arrays)?
+    - [array](theme:array)?
+
+- intent: faq/arrays(eindimensionale)
+  examples: |
+    - Was ist eine [eindimensional](theme:eindimensional) Array?
+    - Was sind [eindimensionale](theme:eindimensional) Arrays?
+    - [eindimensionale](theme:eindimensional) Arrays?
+    - Was ist [eindimensionale](theme:eindimensional) Array?
+    - [eindimensionales](theme:eindimensional) Array?
+    - [Arrays (eindimensional)]((theme:eindimensional))?
+
+
+- intent: faq/arrays(mehrdimensionale)
+  examples: |
+    - Was ist eine [mehrdimensional](theme:mehrdimensional) Array?
+    - Was sind [mehrdimensionale](theme:mehrdimensional) Arrays?
+    - [mehrdimensional](theme:mehrdimensional) Arrays?
+    - Was ist [mehrdimensional](theme:mehrdimensional) Array?
+
+
+- intent: faq/Enumeration
+  examples: |
+    - Was ist eine [Enumeration](theme:enumerations)?
+    - Was sind [Enumerationen](theme:enumerations)?
+    - [Enumeration](theme:enumerations)?
+    - [Enumerations](theme:enumerations)?
+    - [Enumerationen](theme:enumerations)?
+    - Was ist [Enumerations](theme:enumerations)?
+
+
+- intent: faq/Methoden
+  examples: |
+    - Was ist eine [Methode](theme:methoden)?
+    - Was sind [Methoden](theme:methoden)?
+    - [Methoden](theme:methoden)?
+    - [Methode](theme:methoden)?
+
+
+- intent: faq/return
+  examples: |
+    - Was ist eine [return](theme:return) Anweisung?
+    - Was sind [return](theme:return) Anweisungen?
+    - Was ist ein [return](theme:return)?
+    - [return](theme:return)?
+    - [returns](theme:return)?
+    - Was ist [return](theme:return)?
+
+
+- intent: faq/Klassen
+  examples: |
+    - Was ist eine [Klasse](theme:klassen)?
+    - Was sind [Klassen](theme:klassen)?
+    - [Klassen](theme:klassen)?
+    - [Klassen und Objekte](theme:Klassen)
+
+
+- intent: faq/Objekt
+  examples: |
+    - Was ist ein [Objekt](theme:objekte)?
+    - Was sind [Objekte](theme:objekte)?
+    - [Objekte](theme:objekte)?
+
+- intent: faq/Klassendeklaration
+  examples: |
+    - Was ist eine [Klassendeklaration](theme:klassendeklaration)?
+    - Was sind [Klassendeklarationen](theme:klassendeklaration) ?
+    - [Klassendeklaration](theme:klassendeklaration)?
+    - [Klassendeklaration und Zugriff auf Klassenelemente](theme:Klassendeklaration und Zugriff auf Klassenelemente)?
+    
+    
+- intent: faq/Klassenelemente
+  examples: |
+    - Wie greift man auf [Klassenelemente](theme:klassenelemente) zu?
+    - [zugriff auf Klassenelemente](theme:klassenelemente)?
+
+
+- intent: faq/Instanz
+  examples: |
+    - Was ist eine [Instanz](theme:instanz)?
+    - Was sind [Instanzen](theme:instanz)?
+    - [Instanz](theme:instanz)?
+    - [Instanz und Klassenvariablen](theme:Instanz und Klassenvariablen)
+
+- intent: faq/klassenvariablen
+  examples: |
+    - Was ist eine [Klassenvariable](theme:klassenvariablen)?
+    - Was sind [Klassenvariablen](theme:klassenvariablen)?
+    - [Klassenvariable](theme:klassenvariablen)?
+
+- intent: faq/Konstruktor
+  examples: |
+    - Was ist ein [Konstruktor](theme:konstruktor)?
+    - Was sind [Konstruktoren](theme:konstruktor)?
+    - [Konstruktor](theme:konstruktor)?
+
+- intent: faq/methoden_überladen
+  examples: |
+    - Was ist ein [Überladen von Methoden](theme:überladen)?
+    - Wie [überlädt man Methoden](theme:überladen)?
+    - [Überladen von Methoden](theme:überladen)?
+
+- intent: faq/Rekursion
+  examples: |
+    - Was ist eine [Rekursion](theme:Rekursion)?
+    - Was sind [Rekursion](theme:Rekursion)?
+    - [Rekursion](theme:Rekursion)?
+    - Wie wird Rekursion [Realisiert](theme:Rekursion)
+    - Was ist die [Definiton von Rekursion](theme:Rekursion)
+
+- intent: faq/Iterative
+  examples: |
+    - Was ist eine [Itaritive suche](theme:Itaritive Suche)?
+    - Was sind [itaritive suchen](theme:Itaritive Suche)?
+    - [Itaritive Suche](theme:Itaritive Suche)?
+    - [Beispiel: 3D - Gebirge](theme:Beispiel: 3D - Gebirge)?
+
+
+- intent: faq/Static
+  examples: |
+    - Was ist [Static](theme:static)?
+    - Was ist das Schlüsselwort [Static](theme:static)?
+    - [Static](theme:Static)?
+
+
+- intent: faq/Beispiel_Übergabe
+  examples: |
+    - [Beispiel für Übergabe als Basistyp](theme:Beispiel für Übergabe als Basistyp)
+    - Beispiele für [Übergabe als Basistypen](theme:Beispiel für Übergabe als Basistyp)
+
+- intent: faq/Objektzerstörung
+  examples: |
+    - Was ist [Objektzerstörung](theme:Objektzerstörung)?
+    - Was [zerstört man Objekte](theme:Objektzerstörung)?
+    - wie kann man ein [Objekt zerstören](theme:Objektzerstörung)?
+    - [Objektzerstörung](theme:Objektzerstörung)?
+
+- intent: faq/java_garbage_collector
+  examples: |
+    - Was ist [JAVA-Garbage-Collector](theme:java garbage collector)?
+    - Was ist [JAVA Garbage Collector](theme:java garbage collector)?
+    - Was ist [java garbage collector](theme:java garbage collector)?
+    - [JAVA-Garbage-Collector](theme:java garbage collector)?
+    - [JAVA Garbage Collector](theme:java garbage collector)?
+    - [java garbage collector](theme:java garbage collector)?
+    - Was macht ein [JAVA-Garbage-Collector](theme:java garbage collector)?
+    - Was macht ein [JAVA Garbage Collector](theme:java garbage collector)?
+    - Was macht ein [java garbage collector](theme:java garbage collector)?
+
+- intent: faq/Vererbung
+  examples: |
+    - Was ist [Vererbung](theme:vererbung)?
+    - Was ist [Vererbung](theme:vererbung)?
+    - [vererbung](theme:vererbung)?
+
+- intent: faq/verdeckte_Variablen
+  examples: |
+    - Was sind [verdeckte Variablen](theme:verdeckte variablen)?
+    - was ist eine [verdeckte Variable](theme:verdeckte variablen)?
+    - [Verdeckte Variablen](theme:verdeckte variablen)?
+
+- intent: faq/überschriebene_Methoden
+  examples: |
+    - Was sind [überschriebene Methoden](theme:überschriebene methoden)?
+    - Was ist eine [überschriebene Methode](theme:überschriebene methoden)?
+    - [überschriebene Methoden](theme:überschriebene methoden)?
+
+- intent: faq/abstrakte_klassen
+  examples: |
+    - Was sind [abstrakte Klassen](theme:abstrakte klassen)?
+    - was ist eine [abstrakte Klassen](theme:abstrakte klassen)?
+    - [abstrakte-Klassen](theme:abstrakte klassen)?
+
+
+- intent: faq/überschriebene_Methoden
+  examples: |
+    - Was sind [abstrakte Klassen](theme:abstrakte klassen)?
+    - was ist eine [abstrakte Klassen](theme:abstrakte klassen)?
+    - [abstrakte-Klassen](theme:abstrakte klassen)?
+
+- intent: faq/Referenzen
+  examples: |
+    - Was sind [referenzen](theme:referenzen)?
+    - was ist eine [referenz](theme:Referenzen)?
+    - [referenzen](theme:Referenzen)?
+    - [referenz](theme:Referenzen)?
+    
+
+- intent: faq/primitive_datentypen
+  examples: |
+    - Was sind [primitive Datentypen](theme:primitive datentypen)?
+    - was ist ein [primitive Datentyp](theme:primitive datentypen)?
+    - [primitive Datentypen](theme:primitive datentypen)?
+
+- intent: faq/autoboxing
+  examples: |
+    - was ist [Autoboxing](theme:autoboxing)?
+    - [Autoboxing](theme:autoboxing)?
+
+- intent: faq/Unboxing
+  examples: |
+    - was ist [Unboxing](theme:unboxing)?
+    - [Unboxing](theme:Unboxing)?
+
+- intent: faq/KopierKkostruktor
+  examples: |
+    - Was sind [Kopierkonstruktoren](theme:Kopierkonstruktor)?
+    - was ist ein [Kopierkonstruktor](theme:Kopierkonstruktor)?
+    - [Kopierkonstruktor](theme:kopierkonstruktor)?
+
+- intent: faq/Interface
+  examples: |
+    - Was sind [Interfaces](theme:interfaces)?
+    - was ist ein [Interface](theme:interfaces)?
+    - [Interfaces](theme:interfaces)?
+    - [Interfaces Elemente](theme:Interfaces Elemente)
+    - [Interface Elemente](theme:Interfaces Elemente)
+    - [Interface Element](theme:Interfaces Elemente)    
+
+
+- intent: faq/Ersatz_für_Mehrfachvererbung
+  examples: |
+    - Was ist ein [Ersatz für Mehrfachvererbung](theme:ersatz für mehrfachvererbung)?
+    - [Ersatz für Mehrfachvererbung](theme:ersatz für mehrfachvererbung)?
+    - Wie kann man [Mehrfachvererbung ersetzen](theme:ersatz für mehrfachvererbung)?
+    - Gibt es Alternativen für [Mehrfachvererbung](theme:ersatz für mehrfachvererbung)?
+
+- intent: faq/Exception
+  examples: |
+    - Was sind [Exceptions](theme:Exceptions)?
+    - was ist eine [Exception](theme:Exceptions)?
+    - [Exceptions](theme:Exceptions)?
+    - Geprüfte-, ungeprüfte [Exceptions](theme:Exceptions) und Fehler?
+    - ungeprüfte [Exceptions](theme:Exceptions) und Fehler?
+    - Behandlung einer [Exceptions](theme:Exceptions)?
+    - [Beispiel]?
+
+- intent: faq/Kapitel
+  examples: |
+    - 2 - [Einführung](theme:Einführung)?
+    - Kapitel [Einführung](theme:Einführung)?
+    - Kapitel [2](theme:Einführung)
+    - Was ist in Kapitel [2](theme:Einführung)
+    - Was ist in Kapitel [Einführung](theme:Einführung)?
+    - Was ist in Kapitel 2 - [Einführung](theme:Einführung)?
+    - 1 - [Organisatorisches](theme:Organisatorisches)?
+    - Kapitel [Organisatorisches](theme:Organisatorisches)?
+    - Kapitel [1](theme:Organisatorisches)    
+    - Was ist in Kapitel [1](theme:Organisatorisches)
+    - Was ist in Kapitel [Organisatorisches](theme:Organisatorisches)?
+    - Was ist in Kapitel 1 - [Organisatorisches](theme:Organisatorisches)?
+    - Was gib es [Organisatorisches](theme:Organisatorisches)?
+    - [Organisatorisches](theme:Organisatorisches)?
+    - [Organisatorisch](theme:Organisatorisches)?
+    - 3 - [Programmentwurf](theme:Programmentwurf)?
+    - Kapitel [Programmentwurf](theme:Programmentwurf)?
+    - Kapitel [3](theme:Programmentwurf)
+    - Was ist in Kapitel [3](theme:Programmentwurf)
+    - Was ist in Kapitel [Programmentwurf](theme:Programmentwurf)?
+    - Was ist in Kapitel 3 - [Programmentwurf](theme:Programmentwurf)?
+    - 4 - [Erste Schritte](theme:Erste Schritte)?
+    - Kapitel [Erste Schritte](theme:Erste Schritte)?
+    - Kapitel [4](theme:Erste Schritte)    
+    - Was ist in Kapitel [4](theme:Erste Schritte)
+    - Was ist in Kapitel [Erste Schritte](theme:Erste Schritte)?
+    - Was ist in Kapitel 4 - [Erste Schritte](theme:Erste Schritte)?
+    - 5 - [Die Programmiersprache JAVA](theme:Die Programmiersprache JAVA)?
+    - Kapitel [Die Programmiersprache JAVA](theme:Die Programmiersprache JAVA)?
+    - Kapitel [5](theme:Die Programmiersprache JAVA)
+    - Was ist in Kapitel [5](theme:Die Programmiersprache JAVA)
+    - Was ist in Kapitel [Die Programmiersprache JAVA](theme:Die Programmiersprache JAVA)?
+    - Was ist in Kapitel 5 - [Die Programmiersprache JAVA](theme:Die Programmiersprache JAVA)?
+    - 6 - [Variablen und Datentypen](theme:Variablen und Datentypen)?
+    - Kapitel [Variablen und Datentypen](theme:Variablen und Datentypen)?
+    - Kapitel [6](theme:Variablen und Datentypen)    
+    - Was ist in Kapitel [6](theme:Variablen und Datentypen)
+    - Was ist in Kapitel [Variablen und Datentypen](theme:Variablen und Datentypen)?
+    - Was ist in Kapitel 6 - [Variablen und Datentypen](theme:Variablen und Datentypen)?
+
+
+
+
+
+
+
+- synonym: Prüfungsvoraussetzung
+  examples: |
+    - zulassung
+    - Prüfung
+    - klausur
+- synonym: Fragen
+  examples: |
+    - Prof
+    - Email
+- synonym: Buch
+  examples: |
+    - Literatur
+    - Bücher
+- synonym: Programmiersprache
+  examples: |
+    - Programmiersprache Java
+- synonym: geschriebenen Programm?
+  examples: |
+    - geschriebenen Programm
+- synonym: Algorithmen
+  examples: |
+    - Algorithmus
