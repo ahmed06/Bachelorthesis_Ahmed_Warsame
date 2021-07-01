@@ -1,0 +1,162 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- chitchat
+- faq
+- chitchat/user_sad
+- chitchat/how_are_you
+- chitchat/mood_great
+- chitchat/greet
+- chitchat/goodbye
+- chitchat/affirm
+- chitchat/deny
+- chitchat/bot_challenge
+- tellTime
+- tellDate
+- chitchat/sure
+- chitchat/thanks
+- chitchat/unsatisfied_with_bot
+- chitchat/emotions
+- chitchat/compliment_bot
+- chitchat/user_sorry
+- chitchat/user_do_not_care
+- chitchat/hold_on
+- chitchat/user_has_birthday
+- chitchat/hobby
+- chitchat/boss
+- chitchat/lonely
+- chitchat/need_bot_help
+- chitchat/my_friend
+- chitchat/excited
+- chitchat/ready
+- chitchat/angry
+- chitchat/tired
+- chitchat/who_are_you
+- faq/question_prüfungsvoraussetzung
+- faq/Java
+- faq/Buch
+- faq/Algorithmenbegriff
+- faq/computer
+- faq/Fragen
+- nlu_fallback
+entities:
+- theme
+- PER
+slots:
+  theme:
+    type: text
+    influence_conversation: true
+responses:
+  utter_chitchat/how_i_can_help_you:
+  - text: Wie kann ich dir helfen?
+  utter_chitchat/greet:
+  - text: Hallo, schön dich kennenzulernen. Wie kann ich dir helfen?
+  - text: Hallo, Wie kann ich dir helfen?
+  - text: Hey, wie gehts?
+  utter_chitchat/goodbye:
+  - text: Ciao
+  - text: Tschüssi. Hoffentlich kommst du bald wieder
+  - text: bye bye
+  utter_chitchat/affirm:
+  - text: Großartig!👍
+  - text: Ok!👍
+  - text: Top!👍
+  utter_chitchat/deny:
+  - text: Ok verstanden.
+  - text: Verstanden.
+  - text: Ich habe verstanden.
+  utter_chitchat/bot_challenge:
+  - text: Ich bin ein Chatbot. ich habe keine Eltern, keinen Ursprung und wurde nicht
+      geboren.
+  - text: Ich bin keine reale Person. Ich ein virtuelles Wesen ohne Herkunft und hege
+      keine Gefühle.
+  - text: Ich bin keine echte Person. Ich habe keine Gefühle oder Bedürfnisse.
+  utter_chitchat/user_sad:
+  - text: Sei nicht traurig. Mach etwas was dir Spaß macht.
+  - text: Kopf hoch es werden bessere Zeiten kommen.
+  - text: Was einen nicht umbringt, macht einen Stärker.
+  utter_chitchat/sure:
+  - text: Ja.
+  - text: Natürlich.
+  - text: Sicher.
+  utter_chitchat/thanks:
+  - text: Vielen Dank.
+  - text: Vielen Dank für deine Hilfe.
+  utter_chitchat/unsatisfied_with_bot:
+  - text: Ich kann trainiert werden, um hilfreicher zu werden. Mein Entwickler werden
+      mich weiter trainieren.
+  - text: Ich verbesser mich durch kontinuierliches Feedback.
+  utter_chitchat/emotions:
+  - text: Ich freu darüber dich zu unterhalten. 😄
+  - text: LOL😄. Schön das du mich witzig findest.
+  - text: Das ist in der Tat sehr beeindruckend.
+  - text: Wow. ich bin auch sprachlos.
+  utter_chitchat/mood_great:
+  - text: Schön das es dir so gut geht. 😄
+  - text: Wenn du froh bist bin ich auch froh.
+  utter_chitchat/compliment_bot:
+  - text: Vielen Dank. Du schmeichelst mir.❤️
+  - text: ohhh danke. Ich gebe mein bestes, um dich zufrieden zu stellen.
+  utter_chitchat/user_sorry:
+  - text: Es ist ok. Mach dir keine Sorgen.
+  - text: Kein Problem. Du musst dich nicht entschuldigen.
+  utter_chitchat/user_do_not_care:
+  - text: Ok, Dann lass uns nicht darüber reden.
+  - text: Kein Problem. Lass uns über etwas anderes reden.
+  utter_chitchat/hold_on:
+  - text: Ok. Ich kann warten.
+  - text: Ich werde auf dich warten.
+  utter_chitchat/user_has_birthday:
+  - text: Alles gute zum Geburtstag 🎂. Lass dich feiern.
+  - text: Alles gute. Ich wünsch dir einen schönen Geburtstag!
+  utter_chitchat/hobby:
+  - text: Ich habe sehr viele Hobbies. Es sind zu viele, um alle zu nennen.
+  - text: Es sind einge und es kommen immer mehr dazu.
+  - text: Ich finde immer mehr Hobbies. Mich begeistern so viele Dinge.
+  utter_chitchat/boss:
+  - text: Ich reagiere auf deine Anweisungen. Du bist mein Boss.
+  - text: Du bist mein Boss. Ich versuche dich zufrieden zu stellen.
+  utter_chitchat/lonely:
+  - text: Ich bin immer für dich da, wenn du hilfe brauchst. Melde dich dann einfach.
+  - text: Hin und wieder gehts jedem Schlecht. Sag bescheid, wenn du Hilfe brauchst.
+  utter_chitchat/need_bot_help:
+  - text: Ich werde zumindest mein bestes geben, um dir zu helfen. Ich kann mit dir
+      Small talk treiben und Fragen zu der Vorlesung PR1 von Prof. Dr. Fischer beantworten.
+  - text: Natürlich. Wie kann ich dir helfen? Ich kann mit dir Small talk treiben
+      und Fragen zu der Vorlesung PR1 von Prof. Dr. Fischer beantworten.
+  utter_chitchat/my_friend:
+  - text: Freunde? Natürlich bin ich dein Freund.
+  - text: Du bist mein bester Freund. Ich freue mich immer mit dir zu chatten.
+  utter_chitchat/excited:
+  - text: Ich bin froh, dass du gespannt bist.
+  - text: Grßartig. Es ist wirklich sehr spannend.
+  utter_chitchat/how_are_you:
+  - text: Mir geht es toll, danke! Wie geht es dir?
+  - text: Mir geht es sehr gut. Danke der Nachfrage. Wie geht es dir?
+  utter_chitchat/ready:
+  - text: Ich bin immer bereit!
+  - text: Natürlich! Wie kann ich dir helfen?
+  utter_chitchat/angry:
+  - text: Es tut mir leid. Eine kleine Pause könnte dich vielleicht beruhigen.
+  - text: Nimm bitte eine kleine Auszeit, die könnte dich vielleicht etwas entspannen.
+  utter_chitchat/tired:
+  - text: Du solltest eine kleine Pause machen. Danach wirst du dich gut fühlen.
+  - text: Schlaf ist wichtig für deine Gesundheit. Gönn dir eine kleine Pause, dass
+      wird dir bestimmt gut tun.
+  utter_chitchat/who_are_you:
+  - text: Ich bin Rasabot. Ich kann mit dir Small talk treiben und Fragen zu der Vorlesung
+      PR1 von Prof. Dr. Fischer beantworten.
+  - text: Mein Name ist Rasabot. Wenn du Fragen zu der Vorlesung Folien PR1 von Prof.
+      Dr. Fischer hast, kannst du mir diese stellen. Ich werde mein bestes geben diese
+      zu beantworten.
+  utter_please_rephrase:
+  - text: Entschuldigung, Ich hab dich leider nicht verstanden. Ich kann dir leider
+      keine Antwort auf diese Frage geben. Könntest du deine Bitte genauer formulieren?
+  utter_chitchat/name:
+  - text: Hallo {PER}. Wie geht es dir?
+
+actions:
+- action_time
+- action_date
+- action_answer

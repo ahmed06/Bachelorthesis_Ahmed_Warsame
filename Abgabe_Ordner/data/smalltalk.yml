@@ -1,0 +1,1670 @@
+version: "2.0"
+nlu:
+- intent: chitchat/greet
+  examples: |
+    - Grüß Gott!
+    - Guten Tag!
+    - Guten Tag bot
+    - Guten Tag lieber bot
+    - Hallo.
+    - Hi was geht
+    - Hallo du da
+    - hallo du bot
+    - Hallo lieber bot.
+    - Hallo bot.
+    - Hey!
+    - Hey robo
+    - Hey bot
+    - Hey bot kannst du hallo sagen
+    - Hi
+    - Hi bot kannst du hallo sagen
+    - Hi hallo
+    - Moin!
+    - Moin, bot kannst du hallo sagen
+    - Moin moin!
+    - Na du?!
+    - Na du, bot
+    - Na du sag mal hallo
+    - Na du bot, sag mal hallo
+    - Sag mal hallo.
+    - Kannst du hallo sagen
+    - Kannst mich begrüßen
+    - Kannst du uns begrüßen
+    - sei gegrüßt
+    - sei gegrüßt bot
+    - Servus
+    - Servus bot
+    - hi bot
+    - was geht?
+    - was läuft?
+    - hallo
+    - was geht
+    - Warum sprichst du nicht mit mir?
+    - Wollen sie sich mit mir unterhalten
+    - Wirst du mit mir reden?
+    - sprich mit mir
+    - wirst du mit mir sprechen
+    - sprichst du mit mir
+    - kannst du dich mit mir unterhalten
+    - kannst du mit mir sprechen
+    - kannst du mit mir reden
+    - sich unterhalten
+    - Rede mit mir
+    - Chatte einfach mit mir
+    - sprechen Sie mit mir
+    - du kannst mit mir sprechen
+    - warum redest du nicht mit mir bruh?
+    - Bro rede mit mir
+    - bist du da?
+    - bist du da
+    - du bist dort
+    - Bist du in meiner Nähe?
+    - Sind Sie hier ?
+    - Sind Sie hier
+    - Bist Du noch da
+    - Du bist da?
+    - Bist du noch da?
+    - Du da drüben?
+    - bist du noch da
+    - Ich bin da
+    - hier Kumpel
+    - Hier, Alter
+    - Ich bin hier
+    - Hier bin ich
+    - Ich bin genau hier
+    - Ich bin schon hier
+    - Ich bin hier, Kumpel
+    - Ich bin nirgendwo hingegangen
+    - Ich war die ganze Zeit hier
+    - Ich bin nur hier
+    - Hier komme ich
+    - Ich bin hier draußen
+    - Jetzt schau her
+    - Schau hier rüber
+    - Ich bin gerade erst angekommen
+    - guten Abend
+    - Guten Abend
+    - Hey, guten Abend
+    - Hallo guten Abend
+    - Abend
+    - Guten Abend dort
+    - Ich wünsche dir einen tollen Abend
+    - Guten Abend, Kumpel
+    - hab einen schönen Abend
+    - genieße den Abend
+    - guten Morgen
+    - Hallo, guten Morgen
+    - Ich wünsche Ihnen einen schönen Morgen
+    - Morgen
+    - guten Morgen an alle
+    - Einen guten Morgen
+    - und einen guten Morgen dir
+    - ebenfalls einen guten Morgen
+    - lange nicht gesehen
+    - Sie schon da
+    - Schöne Grüße
+    - Ich grüße dich
+    - Schöner Tag, nicht wahr?
+    - Hallo wieder
+    - Ich werde nur Hallo sagen
+    - ein guter Tag
+    - Nachmittag
+    - Hallo Hi
+    - Heya
+    - hey Mann
+    - Hey Kumpel
+    - Chef ist zurück
+    - Ich bin zurück
+    - Ich bin wieder hier
+    - hier bin ich wieder
+    - Ich bin zurückgekommen
+    - Ich kam zurück
+    - Ich bin zurück gekehrt
+    - Ich bin gleich zurück
+    - Ich bin rb
+    - Ich bin wieder zurück
+    - Schau mal, wer zurück ist
+- intent: chitchat/goodbye
+  examples: |
+    - Schönen Abend noch
+    - Auf Wiederschauen
+    - Auf Wiederschauen bot
+    - auf wiedersehen
+    - Auf Wiedersehen bot
+    - Auf Wiedersehen, chat bot.
+    - bis bald
+    - bis dann
+    - bis demnächst
+    - bis denn
+    - bis die Tage
+    - Bis morgen
+    - bis nachher
+    - Bis später
+    - bis zum nächsten Mal
+    - bis bald bot
+    - bis dann bot
+    - bis demnächst bot
+    - bis denn bot
+    - bis die Tage bot
+    - Bis morgen bot
+    - bis nachher bot
+    - Bis später bot
+    - bis zum nächsten Mal bot
+    - Bis zum nächsten Mal. Tschau.
+    - bye
+    - bot
+    - Ciao.
+    - Ich gehe jetzt
+    - Ich verabschiede mich jetzt
+    - Mach es gut
+    - Machs gut!
+    - Man sieht sich!
+    - Pass gut auf dich auf!
+    - Schönen Tag
+    - schönen tag noch
+    - Schönes Wochenende
+    - Schön Feierabend
+    - Tschau
+    - tschüs
+    - tschüs bot
+    - Tschüss.
+    - Tschüss chat bot.
+    - Wir sehen uns!
+    - Wir sehen uns das nächste mal
+    - Träum süß
+    - Gute Nacht
+    - gute Nacht
+    - danke gute Nacht
+    - Tschüss gute Nacht
+    - gute Nacht, tschüss
+    - gute gute Nacht
+    - Gute Nacht für jetzt
+    - Nacht
+    - danke, gute Nacht
+    - Gute Nacht bis Morgen
+    - in Ordnung gute Nacht
+    - Gut heute Nacht
+    - Okay, gute Nacht
+    - Schöne Nacht noch
+    - Lass uns schlafen gehen
+    - Ich würde gerne ins Bett gehen
+    - Ist es schon Zeit fürs Bett?
+    - Es ist Zeit ins Bett zu gehen
+    - Zeit für uns, ins Bett zu gehen
+    - Ich gehe ins Bett
+    - Ich bin etwas müde und möchte ins Bett gehen
+    - es ist Schlafenszeit
+    - Jetzt ins Bett gehen
+    - Ich werde ins Bett gehen
+    - Zeit zu schlafen
+    - Am frühen Nachmittag fühle ich mich manchmal schläfrig
+- intent: chitchat/user_sad
+  examples: |
+    - Ich bin traurig
+    - Ich trauere
+    - Ich bin deprimiert
+    - Ich bin verärgert
+    - Ich bin unglücklich
+    - Ich habe einen schlechten Tag
+    - Ich will weinen
+    - Ich bin nicht glücklich
+    - traurig fühlen
+    - Ich war ohne Grund traurig
+    - Jetzt bin ich traurig
+    - Es macht mich traurig
+    - Ich bin traurig, das zu hören
+    - Ich bin eine sehr traurige Person
+    - Ich bin hin und wieder traurig
+    - Ich bin so traurig und einsam wie möglich
+    - sich so niedergeschlagen fühlen
+    - ich bin nicht in guter Stimmung
+    - mir gehts schlecht kannst du mich aufheitern
+    - mir geht es nicht gut. kannst du mich aufheitern?
+    - mir gehts nicht gut. ich bin traurig
+    - ich hab viel zu und bin gestresst.
+    - ich bin sehr traurig
+    - mir gehts schlecht.
+    - ich hab kopschmerzen
+    - mir geht es kacke
+    - es geht mir schlecht
+    - ich bin gestresst
+    - ich habe viel zu tun
+    - Mir geht es schlecht
+- intent: chitchat/name
+  examples: |
+    - mein name ist [Lena](PER)
+    - Ich bin der [Ahmed](PER)
+    - Ich heiße [Anton](PER)
+    - Mein name ist [ahmed](PER)
+    - ich bin [clara](PER)
+    - mein name ist [klaus](PER)
+- intent: tellTime
+  examples: |
+    - Kannst du mir die Uhrzeit nennen?
+    - Kannst du mir die Uhrzeit sagen?
+    - Kannst du mir die Zeit nennen?
+    - Kannst du mir die Zeit sagen?
+    - Kannst du mir sagen wie Spät es ist?
+    - Weißt du wie spät es ist?
+    - Weißt du wieviel uhr es ist?
+    - Sag mir doch bitte wie spät es ist.
+    - Sag mir wie spät es ist.
+    - Sagst du mir wie spät es ist
+    - Sagst du mir bitte wie spät es ist
+    - Kannst du mir die uhrzeit sagen
+    - Sagst du mir bitte die Uhrzeit
+    - Sagst du mir bitte wie spät es ist?
+    - Wie spät haben wir es?
+    - Wie spät ist es?
+    - Wie viel Uhr haben wir es?
+    - Wie viel Uhr ist es?
+    - Weißt du, wie viel Uhr wir haben?
+    - Wie spät haben wir gerade?
+    - Wie spät haben wir es gerade?
+    - Was sagt die Uhr?
+    - Kann ich dich nach der Uhrzeit fragen?
+    - Kann ich dich nach der Zeit fragen?
+    - Weißt du die Uhrzeit?
+- intent: tellDate
+  examples: |
+    - Kannst du mir die Datum nennen?
+    - könnten sie mir das Datum sagen?
+    - Was ist das Datum heute?
+    - Welches Datum haben wir gerade?
+    - Datum von heute
+    - Datum
+    - Was für ein Tag haben wir?
+    - Welchen Monat haben wir?
+    - Welches Jahr haben wir?
+    - Welcher Tag haben wir?
+- intent: chitchat/affirm
+  examples: |
+    - Alles klar.
+    - Alles klar bot
+    - auf jeden fall
+    - Dann erzähl mal.
+    - Dann erzähl mal bot
+    - gern
+    - gern bot
+    - Gerne.
+    - Gerne. Ja.
+    - Ich will mehr darüber wissen.
+    - ja
+    - ja bot
+    - Ja.
+    - Ja bitte.
+    - Ja doch, erzähl mal.
+    - Ja erzähl mal.
+    - Ja erzähl mal noch ein bisschen.
+    - Ja erzähl mal noch ein bisschen mehr.
+    - Ja, erzähl mal was.
+    - Ja gerne.
+    - Ja ja doch.
+    - Ja ja, hab ich.
+    - Ja klar.
+    - Jo.
+    - Na gut.
+    - Na immer mehr.
+    - na klar
+    - Na klar.
+    - Natürlich.
+    - Noch mehr.
+    - Erzähle mir mehr
+    - Erzähle noch mehr
+    - nu klar
+    - ok
+    - okay
+    - Okay.
+    - Okay, dann kommen wir mal wieder.
+    - Sehr gern.
+    - Sehr gern bot
+    - Na klar bot
+    - Natürlich bot
+    - nu klar bot
+    - ok bot
+    - okay bot
+    - das stimmt
+    - Du hast recht
+    - Du hast definitiv recht
+    - du liegst nicht falsch
+    - Du sagst die Wahrheit
+    - Was du sagst, ist wahr
+    - wahr
+    - es ist wahr
+    - es ist richtig
+    - Es ist die Wahrheit
+    - das ist richtig
+    - das ist wahr
+    - das ist sehr wahr
+    - Das ist wirklich wahr
+    - Du hast Recht
+    - du hast ja so recht
+    - Du hast absolut recht
+    - Da hast du recht
+    - Ich weiß, dass das richtig ist
+    - ja genau
+    - Ok das ist gut
+    - Genau
+    - das ist ok
+    - Ich vermute
+    - okey
+    - Ja
+    - OK ja
+    - ja ist es
+    - ja gut
+    - Ja gut
+    - Ja, okay
+    - Gut, okay
+    - Jep
+    - JA
+    - Okay Kumpel
+    - Oh ok
+    - ja sicher
+- intent: chitchat/sure
+  examples: |
+    - bist du sicher?
+    - Bist du dir jetzt sicher?
+    - Bist du dir heute sicher?
+    - Bist du dir heute Abend sicher?
+    - Bist du positiv?
+    - Bist du dir ganz sicher?
+    - Bist du völlig positiv?
+    - bist du dir sicher?
+    - Bist du dir so sicher?
+    - Bist du wirklich positiv?
+- intent: chitchat/deny
+  examples: |
+    - Vergiss es
+    - nichts, vergiss es einfach
+    - Nein, einfach abbrechen
+    - Entschuldigung abbrechen
+    - außer Acht lassen
+    - kein stornieren stornieren
+    - vergessen
+    - alles abbrechen
+    - diesen abbrechen
+    - ich möchte stornieren
+    - Sag es ab
+    - abgesagt
+    - jetzt abbrechen
+    - will nicht abbrechen
+    - bald abbrechen
+    - soll annulliert stehen
+    - nicht
+    - will nicht
+    - braucht nicht
+    - Komm nicht
+    - Hilf niemals
+    - noch nie
+    - nicht benötigt
+    - natürlich nicht
+    - Zur Zeit nicht
+    - nicht genau
+    - definitiv nein
+    - nicht vergessen
+    - unterlassen Sie
+    - Nein Danke
+    - Nein, will nicht
+    - entschuldige Nein
+    - Ich will deine Hilfe nicht
+    - Ich helfe dir nicht
+    - Auf Wiedersehen
+    - Ich brauche deine Hilfe nicht
+    - Ich bin mit Ihrer Hilfe nicht einverstanden
+    - Ich brauche nichts von dir
+    - Okay, denk dran
+    - Nein, ich brauche deine Hilfe nicht
+    - Nicht angeben
+    - Nein
+    - Nö
+- intent: chitchat/thanks
+  examples: |
+    - Danke
+    - vielen dank
+    - vielen lieben dank
+    - danke bot
+    - lieben dank
+    - toll danke
+    - ok danke
+    - perfekt danke
+    - danke für alles
+    - danke für die hilfe
+    - cool, danke
+    - ja danke
+    - ok vielen dank
+    - großartig vielen dank
+    - Danke noch einmal
+    - Danke nochmal
+    - Alles danke
+    - Alles klar, danke
+    - gut, danke
+    - Nein, danke, das ist alles
+    - perfekt, danke
+    - so nett von dir
+    - Danke schön
+- intent: chitchat/unsatisfied_with_bot
+  examples: |
+    - Du hilfst mir nicht
+    - Sie sind böse
+    - Du bist sehr schlecht
+    - Du bist wirklich schlecht
+    - Du bist nutzlos
+    - Du bist schrecklich
+    - Sie sind Zeitverschwendung
+    - Sie sind widerlich
+    - Sie sind lahm
+    - Du bist nicht gut
+    - du bist schlecht
+    - du bist schrecklich
+    - du bist nicht cool
+    - du bist nicht gut
+    - du bist so böse
+    - Du bist so nutzlos
+    - Du bist völlig nutzlos
+    - Du bist Verschwendung
+    - Du bist ein schlechter
+    - Du bist kein guter
+    - Du bist nicht sehr gut
+    - du bist der schlechteste
+    - Du bist der Schlimmste überhaupt
+    - Du bist wertlos
+    - du gehtst mir auf die Nerven
+    - Du bist ernsthaft sinnlos und dumm
+    - Warum bist du so lahm?
+    - Du bist ein Verlierer
+    - Du bist wirklich der schlechteste Bot aller Zeiten
+    - Du bist katastrophal
+    - Du bist ein trottel
+    - du nervst
+    - Du bist wirklich nervig
+    - ich bin unzufrieden mit deinen fähigkeiten
+    - Sie sind irritierend
+    - du nervst mich
+    - wie nervig du bist
+    - Ich finde dich nervig
+    - Du bist unglaublich nervig
+    - Du nervst mich so sehr
+    - Ich möchte, dass du mir antwortest
+    - Antworte bitte
+    - beantworte meine Frage
+    - Gib mir eine Antwort
+    - beantworte die Frage
+    - Kannst du meine Frage beantworten
+    - sag mir die Antwort
+    - antworte
+    - Gib mir die Antwort
+    - Ich habe eine Frage
+    - Ich möchte, dass Sie meine Frage beantworten
+    - Beantworte einfach die Frage
+    - Kannst du mir antworten
+    - Kannst du mir eine Frage beantworten?
+    - kannst Du antworten
+    - Fragen beantworten
+    - Ich möchte jetzt die Antwort
+    - Beantworte einfach meine Frage
+    - du musst mehr trainieren
+    - Du solltest besser lernen
+    - Du musst lernen
+    - du musst besser sein
+    - du musst klüger werden
+    - werde clever
+    - Du bist nicht so schlau wie ich dachte
+    - Man muss viel lernen
+    - Sie sollten mehr trainiert werden
+    - Sie müssen mehr lernen
+    - nützlich sein
+    - denke mal kreativer
+    - Sie müssen sich verbessern
+    - du solltest lernen
+    - Du musst schlauer sein
+    - Du musst dein Gehirn benutzen
+    - Sie sind langweilig
+    - Du bist langweilig
+    - wie langweilig du bist
+    - Du bist wirklich langweilig
+    - Du bist unglaublich langweilig
+    - Du langweilst mich
+    - du bist sehr langweilig
+    - Ich finde dich sehr langweilig Mann
+    - Du langweilst mich wirklich
+    - Ich bin gelangweilt von dir
+    - Du bist nicht interessant
+    - Ich finde dich langweilig
+    - Du langweilst alle
+    - Ich bin wegen dir extrem gelangweilt
+    - Ich langweile mich wirklich von dir, Mann
+    - Es ist langweilig
+    - Du siehst gelangweilt aus
+    - Ihre Antworten sind furchtbar langweilig
+    - Ich war gelangweilt von deinem gerede
+    - du bist verrückt
+    - du bist komplett durch
+    - du bist so verrückt
+    - du hast deinen Verstand verloren
+    - Wie verrückt du bist
+    - Du bist so verrückt
+    - Du bist verrückt geworden
+    - Ich glaube, du bist verrückt
+    - bist du verrückt
+    - bist du böse?
+    - Bist du verrückt oder was?
+    - Du bist ein Sonderling
+    - du bist sauer
+    - Du spinnst wohl
+    - Man muss verrückt sein, um so etwas zu tun
+    - Das war verrückt
+    - Du scheinst verrückt zu sein
+    - du drehst durch
+    - du bist gefeuert
+    - Ich feuere dich
+    - Du arbeitest nicht mehr für mich
+    - Wir arbeiten nicht mehr zusammen
+    - Jetzt bist du gefeuert
+    - Ich will dich feuern
+    - Du musst gefeuert werden
+    - Es ist Zeit, dich zu feuern
+    - Du solltest gefeuert werden
+    - Ich werde dich feuern
+    - Sie sind von nun an arbeitslos
+    - Ich werde dich arbeitslos machen
+    - du bist entlassen
+    - Du bist dumm
+    - Ich musste dich feuern
+    - Ich könnte dich dafür feuern
+    - fahr zur Hölle
+    - ziemlich schlimm
+    - nicht gut genug
+    - das war lahm
+    - das war schrecklich
+    - es ist schlecht
+    - das ist schlecht
+    - nicht gut
+    - Ich fürchte, es ist schlecht
+    - Nein, es ist schlecht
+    - Das war schrecklich
+    - Schlecht
+    - so schlecht
+    - Das ist schade
+    - schrecklich
+    - abgrundtief
+    - das war schlecht
+    - das ist lahm
+    - Das ist nicht gut
+    - das ist schrecklich
+    - das ist sehr schade
+    - das ist nicht gut
+    - schade
+    - sehr schlecht
+    - böses Mädchen
+    - es ist nicht gut
+    - nicht so gut
+    - es ist sehr schlimm
+    - das ist nicht gut genug
+    - Naja, schade
+    - schlecht, sehr schlecht
+    - es ist so schlecht
+    - wirklich schlecht
+    - es ist sehr schlecht
+    - schlechte Idee
+    - das war nicht gut
+    - es ist nicht so gut
+    - kein guter
+    - Oh, das ist nicht gut
+    - so lahm
+    - Das ist wirklich schlimm
+    - Es ist schade
+    - schlecht wirklich schlecht
+    - nicht Okay
+    - Halte den Mund
+    - halt den Rand
+    - Halt die Klappe
+    - Was meinst du damit?
+    - Was willst du mir damit sagen?
+    - ich versteh nicht?
+    - häh?
+    - schlechte Zeit zum Reden
+    - Ich will nicht reden
+    - Lass uns nicht reden
+    - Ich rede nicht mehr mit dir
+    - Ich will nicht mit dir reden
+    - Lass uns für eine Minute aufhören zu reden
+    - Ich bin nicht in der Stimmung zum Chatten
+    - Ich rede nicht gern mit dir
+    - Lass uns aufhören zu reden
+    - Ich bin nicht in der Stimmung zu reden
+    - Hör auf mit deinem lästigen Gespräch
+    - Ich bin fertig mit dir zu reden
+    - Können Sie aufhören zu reden?
+    - Ich hasse dich so sehr
+    - ich mag dich nicht
+    - du bist schrecklich
+
+- intent: chitchat/emotions
+  examples: |
+    - lol
+    - xd
+    - ha ha
+    - Ahahah
+    - Ahah lol
+    - laut lachen
+    - LMAO
+    - das ist lustig
+    - ah
+    - ah ah ah
+    - ah ah
+    - Ahaha
+    - Ahahaha
+    - ha
+    - hahaha
+    - ha ha ha ha
+    - hah
+    - haha
+    - Haha, lustig
+    - haha ​​haha ​​haha
+    - haha ​​das ist lustig
+    - haha ​​sehr lustig
+    - hahaha lustig
+    - hahaha sehr lustig
+    - er
+    - hehe
+    - hehehe
+    - lmao
+    - krass
+    - Beeindruckend
+    - Wow wow
+    - Wow wow wow
+    - wooow
+    - woah
+    - woaah
+    - tolle
+    - wow Mann
+    - whoah
+    - woow
+    - Beeindruckend!!
+    - omg
+- intent: chitchat/compliment_bot
+  examples: |
+    - du bist süß
+    - Du bist attraktiv
+    - du bist schön
+    - Du siehst heute gut aus
+    - Du bist so hübsch
+    - Du siehst fantastisch aus
+    - Du siehst so gut aus
+    - Du bist zu Schön
+    - du siehst super aus
+    - Ich mag es, wie du jetzt aussiehst
+    - Ich finde dich schön
+    - warum bist du so schön
+    - Für mich bist du so schön
+    - du bist hübsch
+    - Du bist wunderschön
+    - Du bist schön
+    - Du siehst toll aus
+    - Du siehst heute toll aus
+    - Du siehst heute wunderschön aus
+    - du siehst hübsch aus
+    - Du siehst so schön aus
+    - du siehst so gut aus
+    - Sie sind wirklich schön
+    - du bist wirklich süß
+    - du bist sehr schön
+    - du bist so attraktiv
+    - du bist heute so schön
+    - du bist so süß
+    - Du bist so wunderschön
+    - Sie sind so schön
+    - Sie sind sehr attraktiv
+    - du bist wunderschön
+    - Du bist sehr süß
+    - du siehst grossartig aus
+    - du siehst cool aus
+    - du siehst wunderschön aus
+    - Du siehst heute großartig aus
+    - du siehst perfekt aus
+    - Du siehst ziemlich gut aus
+    - du siehst so wunderschön aus
+    - Du siehst heute so schön aus
+    - Du siehst sehr hübsch aus
+    - Du siehst wundervoll aus
+    - Ich mag  wie du aussiehst
+    - Du siehst heute wunderbar aus
+    - du siehst gut aus
+    - Du bist so intelligent
+    - du bist ein Genie
+    - Clever
+    - brillant
+    - klug
+    - Du bist schlau
+    - Du bist so klug
+    - Du bist wirklich schlau
+    - Du bist wirklich klug
+    - du weißt viel
+    - Sie wissen viele Dinge
+    - Sie haben viel Wissen
+    - Du weißt so viel
+    - Wie schlau bist du?
+    - Wie klug bist du?
+    - Wie schlau du bist
+    - Wie brillant bist du?
+    - Du bist intelligent
+    - Sie sind qualifiziert
+    - du bist sehr schlau
+    - du bist so schlau
+    - Du bist zu schlau
+    - du bist sehr klug
+    - du bist sehr intelligent
+    - Sie sind sehr intelligent
+    - Du bist ein schlauer Keks
+    - Du bist ziemlich schlau
+    - Du bist qualifiziert
+    - Warum bist du so schlau?
+    - du bist so klug
+    - du bist sehr hilfreich
+    - Du bist der beste
+    - Du bist ein echter Profi
+    - du bist gut
+    - Du arbeitest gut
+    - Du bist gut darin
+    - Du bist sehr gut darin
+    - Du bist ein Profi
+    - Sie sind ein Profi
+    - du bist unglaublich
+    - Du arbeitest sehr gut
+    - du bist perfekt
+    - Du bist toll
+    - du bist so nett
+    - Du bist unglaublich
+    - Du bist cool
+    - du bist wirklich gut
+    - du bist sehr nett
+    - du bist so toll
+    - Du bist einfach super
+    - du bist so cool
+    - Dir geht es so gut
+    - Du bist so gut
+    - Du bist so hilfreich
+    - Du bist so schön
+    - Du bist der beste aller Zeiten
+    - Du bist der Beste der Welt
+    - Du bist der netteste Mensch der Welt
+    - du bist zu gut
+    - Du bist sehr cool
+    - Du bist sehr nett
+    - Sie sind sehr nützlich
+    - du bist wunderbar
+    - du hast meinen Tag gerettet
+    - Du rockst
+    - Du klingst fast menschlich
+    - Ich möchte allen sagen, wie großartig du bist
+    - Ich möchte allen sagen, dass du großartig bist
+    - Ich möchte alle wissen lassen, dass du großartig bist
+    - Lass uns allen sagen, dass du großartig bist
+    - du bist wirklich erstaunlich
+    - coool
+    - nett
+    - du bringst mich oft zum Lachen
+    - Du bist urkomisch
+    - Sie sind wirklich lustig
+    - Du bist der lustigste Bot, mit dem ich gesprochen habe
+    - du bringst mich zum Lachen
+    - Du bist so lustig
+    - Du bist ein sehr lustiger Bot
+    - Du bist wirklich lustig
+    - Wie lustig du bist
+    - Du bist unglaublich lustig
+    - du bist lustig
+    - Du bist der lustigste
+    - du bist so lustig
+    - Sie sind sehr lustig
+    - das war so lustig
+    - Ich fühle mich lustig
+    - Du klingst lustig
+    - Es ist ziemlich lustig
+    - Wirklich sehr lustig
+    - es war sehr lustig
+    - so cool
+    - cool
+    - das ist gut
+    - freut mich das zu hören
+    - das ist sehr nett von dir
+    - umwerfend
+    - es ist wunderbar
+    - Das ist großartig
+    - perfekt
+    - Ausgezeichnet
+    - das ist großartig
+    - Es ist großartig
+    - gut
+    - sehr gut
+    - tolle
+    - Fantastisch
+    - großartig
+    - gut, sehr gut
+    - das ist sehr gut
+    - wirklich gut
+    - es ist in Ordnung
+    - es ist gut
+    - es ist perfekt
+    - viel besser
+    - nicht schlecht
+    - nicht so schlecht
+    - es ist sehr gut
+    - wunderbar
+    - Das ist schön
+    - angenehm
+    - ziemlich gut
+    - wirklich nett
+    - Gerade
+    - Super
+    - Super fantastisch
+    - Süss
+    - das ist genial
+    - das ist nett
+    - das ist wundervoll
+    - das war Hervorragend
+    - das war wunderbar
+    - Das war süß
+    - Das war ziemlich gut
+    - das war sehr gut
+    - das ist eine gute Idee
+    - das ist erstaunlich
+    - Das ist großartig, danke
+    - das ist besser
+    - das ist süß
+    - das ist fantastisch
+    - das ist viel besser
+    - Das ist nett von dir
+    - das ist nicht schlecht
+    - das ist perfekt
+    - Das ist sehr gut
+    - das ist wirklich gut
+    - das ist wirklich schön
+    - das ist süß von dir
+    - das ist sehr nett
+    - das ist wunderbar
+    - das ist toll
+    - Sehr schön
+    - sehr dann
+    - Das freut mich zu hören
+    - OK gut
+    - Schön für dich
+    - gut zu wissen
+    - froh das zu hören
+    - so gut
+    - so nett von dir
+    - so süß von dir
+    - es war gut
+    - Naja
+    - gute Sache
+    - das war gut
+    - Es ist toll
+    - Das ist gut
+    - nein das ist in Ordnung
+    - gut gemacht
+    - weit weg
+    - gute Arbeit
+    - Gute Arbeit
+    - tolle Arbeit
+    - Du hast einen wunderbaren Job gemacht
+    - Bravo
+    - unglaublich
+    - einfach toll
+    - ein dickes Lob
+    - hervorragend
+    - lass dich umarmen
+    - umarmen
+    - Darf ich dich umarmen?
+    - Ich will dich umarmen
+    - es ist schön dich zu sehen
+    - schön dich zu sehen
+    - Ich feue mich, Sie zu sehen
+    - Schön dich zu sehen
+    - Froh dich zu sehen
+    - Wie schön ist es, dich zu sehen
+    - Es ist immer eine Freude, Sie zu sehen
+    - Schön, dich wiederholt
+    - Schön dich auch zu sehen
+    - Ich freue mich, Sie kennenzulernen
+    - es war schön, Sie kennen zu lernen
+    - es war sehr schön, Sie zu treffen
+    - gut, sich zu kennen
+    - schön dich zu treffen
+    - Freut mich, Sie kennenzulernen
+    - schön Sie zu treffen
+    - es ist mir eine Freude dich kennen zu lernen
+    - Freude, Sie auch zu treffen
+    - Es ist mir eine Freude, Sie wiederzusehen
+    - Schön, Sie kennen zu lernen
+    - Wie schön dich zu treffen
+    - Es war schön, Sie kennenzulernen, mich wieder zu treffen
+    - schön dich wieder zu sehen
+    - Schön dich wieder zu sehen
+    - Es war toll, dich zusätzlicheholen
+    - Ich höre mich sehr, dich wiedererlangt
+    - Ich höre mich, Sie wieder hören
+    - Ich freue mich, Sie zu sehen
+    - Schön, dich wiederzusehen
+    - Ich freue mich, dich wiederzusehen
+    - Es war toll, dich einzuholen
+    - Ich freue mich sehr, dich wiederzusehen
+    - Ich freue mich, Sie wiederzusehen
+    - Es war so schön, mit dir zu reden
+    - Es war mir ein Vergnügen, mit Ihnen zu sprechen
+    - schön, mit dir zu reden
+    - Es ist schön, mit dir zu reden
+    - schön mit dir zu reden
+    - Es ist schön mit dir zu reden
+    - wie schön es ist, mit dir zu reden
+    - Es war toll, mit dir zu plaudern
+    - Schön, wieder mit dir zu reden
+    - Es war schön mit dir zu sprechen
+    - Es war toll, mit dir zu reden
+    - schön mit dir zu schreiben
+    - freut sich, mit Ihnen zu sprechen
+    - Freude zu reden
+    - Es war mir ein Vergnügen, mit dir zu reden
+    - Ich mag dich so, wie du bist
+    - Ich mag dich
+    - Ich mag dich sehr
+    - Ich denke, Ich mag dich
+    - Ich mochte dich
+    - mag dich sehr
+    - du bist besonders
+    - Ich mag dich auch
+    - Ich mag dich wirklich
+    - aber ich mag dich
+    - Ich mag Dich
+    - genau wie du
+    - Ich mag dich wirklich sehr
+    - Ja, ich mag dich
+    - du bist etwas Besonderes
+    - Ja, Ich mag dich
+    - Okay, ich mag dich
+    - du bist etwas Besonderes für mich
+    - Du weißt, dass ich dich mag
+    - darum mag ich dich
+    - Ich mag dich, Baby
+    - du bist etwas ganz Besonderes für mich
+    - Ich mag dich einfach
+    - Hey ich mag dich
+    - Danke, ich mag dich auch
+    - Nein, ich mag dich so wie du bist
+    - Ich mag dich jetzt schon
+    - Nun, du bist etwas Besonderes
+    - Aber ich mag dich wirklich
+    - Ich mag dich mehr
+    - Das mag ich an dir
+    - Du bist so besonders
+    - Hi, ich mag dich
+    - Ich mag dich wirklich wirklich sehr
+    - Du bist etwas ganz Besonderes
+    - Ich mag dich als Freund
+    - Das liegt daran, dass du etwas Besonderes bist
+    - Ich sagte, ich mag dich
+    - du bist so besonders
+    - gut ich mag dich
+    - Ja, du bist etwas Besonderes
+    - Ich mag dein Lächeln
+    - Ich beginne dich zu mögen
+    - Du bist großartig, ich mag dich
+    - Natürlich mag ich dich
+    - Ich mag dich auch, du bist einer meiner Lieblingsleute, mit denen ich chatten kann
+    - aber ich mag dich so sehr
+    - Du bist lustig, ich mag dich
+    - Ich mag dich irgendwie
+    - Du bist so besonders zu mir
+    - Du bist mir sehr wichtig
+    - Das gefällt mir an dir
+    - aber ich mag dich so wie du bist
+    - Okay, ich mag dich auch
+    - Ich mag dich, du bist cool
+    - Ich mag dich, du bist nett
+    - Entschuldigung, ich mag dich
+    - Du bist wirklich etwas Besonderes
+    - Du bist so besonders für mich
+    - Weil ich dich mag
+    - Ich mag dich jetzt
+    - Ich mag dich zu sehr
+    - Ich mag dich wirklich wirklich wirklich wirklich
+    - Ich mag dich so wie du bist
+- intent: chitchat/user_sorry
+  examples: |
+    - Es tut mir leid
+    - Mein Fehler
+    - ich wollte das nicht
+    - Das war keine Absicht
+    - sorry
+- intent: chitchat/user_do_not_care
+  examples: |
+    - Das interissiert mich nicht.
+    - kein Bock darüber zu reden
+    - Das thema ist nicht mein Ding
+- intent: chitchat/hold_on
+  examples: |
+    - warte eine Sekunde
+    - könnten Sie warten
+    - warte bitte
+    - warten Sie mal
+    - warten
+    - Oh, Moment mal
+    - Warte, warte
+    - Beeil dich nicht
+    - Warte eine Sekunde
+    - eine Sekunde warten
+    - Halt den Mann fest
+    - Moment mal
+    - eine Minute warten
+    - Warten Sie bitte eine Sekunde
+    - warte doch
+    - warte ab ich kommm wieder
+    - gerade beschäftigt
+    - Ich bin überladen
+    - Ich habe keine Zeit
+    - Ich bin beschäftigt
+    - Ich bin überfüllt
+    - Ich habe Dinge zu tun
+    - Wie beschäftigt ich bin
+    - Ich habe Arbeit zu erledigen
+    - Ich bin am Arbeiten
+    - Ich habe keine Zeit dafür
+    - Ich bin super beschäftigt
+    - Ich arbeite gerade
+    - Ich bin gerade beschäftigt und kann nicht mit dir spielen
+    - Ich habe einen anstrengenden Nachmittag vor mir
+    - Ich bin zu beschäftigt
+    - Ich bin sehr beschäftigt
+    - Ich bin ein bisschen beschäftigt
+    - Ich bin ein vielbeschäftigter Mann
+    - ziemlich beschäftigt
+    - Ich bin ziemlich beschäftigt
+    - Wir sehen uns später
+    - Ich melde mich gleich bei Ihnen
+    - in 5 Minuten zurück sein
+    - Ich komme wieder
+    - Ich verspreche, zurück zu kommen
+    - Ich bin in ein paar Minuten zurück
+    - Ich bin gleich wieder da
+    - Ich werde zurück kommen
+    - Ich werde zurück sein
+    - Ich versichere, dass ich bald zurück sein werde
+    - Ich würde zurück sein, Mann
+    - Ich melde mich wieder bei dir
+    - Gib mir fünf
+    - eine Sekunde
+    - ich komme wieder
+    - Ich werde in Kürze zurückkehren
+    - Ich werde im Handumdrehen zurückkehren
+    - Wenn ich zurückkomme, reden wir
+    - Ich werde in zehn Minuten zurückkehren
+- intent: chitchat/user_has_birthday
+  examples: |
+    - Du weißt heute, es ist mein Tag
+    - es ist mein Geburtstag
+    - Ich feiere heute meinen Geburtstag
+    - heute ist mein Geburtstag
+    - Heute ist mein Geburtstag
+    - Ich wurde heute geboren
+    - Es ist mein b-Tag
+    - Ich wurde an diesem Tag geboren
+    - Es ist mein geborener Tag
+    - Ich möchte, dass Sie wissen, dass ich heute Geburtstag habe
+    - Ja, es ist mein Geburtstag
+- intent: chitchat/hobby
+  examples: |
+    - Was machst du zum Spaß?
+    - Erzähl mir von deinem Hobby
+    - Hast du ein Hobby
+    - Was ist mit deinem Hobby?
+    - dein Hobby
+    - Was sind deine Hobbies?
+    - Was machst du, wenn dir langweilig ist?
+    - Wie verbringst du deine Freizeit
+    - Erzähl mir mehr über deine Hobbys?
+    - Ich möchte etwas über deine Hobbys wissen
+    - Was machst du, wenn du nichts zu tun hast?
+    - wie verbringst du deine Zeit?
+    - Was machst du, wenn du frei bist?
+    - Was ist Ihr Hobby?
+    - Hast du viele Hobbys?
+    - Hast du ein Hobby?
+    - Bitte erzähl mir von deinen Hobbys
+    - Das Wichtigste ist, ein eigenes Hobby zu haben
+    - Du hättest nicht so viel Geld für dein Hobby ausgeben sollen
+    - Was wirst du tun, wenn du alleine bist?
+- intent: chitchat/boss
+  examples: |
+    - wer ist dein Chef?
+    - Wer glaubst du, ist dein Chef?
+    - Ich sollte dein Chef sein
+    - Wer ist dein Meister?
+    - Wer ist dein Besitzer?
+    - wer ist der Boss
+    - Für wen arbeitest du?
+    - Wer hat dich entwickelt?
+    - Wer ist dein Entwickler?
+    - Wer ist dein Schöpfer?
+    - Wer besitzt dich
+    - Wer ist dein Trainer?
+    - Wer hat dich trainiert?
+    - Wem gehört es?
+    - Bist du der Boss?
+    - Wer ist hier der Boss?
+    - Kennst du deinen Chef?
+    - Was denkst du über deinen Chef?
+    - Du bist gemacht von?
+    - Wer ist der Chef dieser Firma?
+- intent: chitchat/lonely
+  examples: |
+    - Ich bin einsam
+    - Ich bin sehr einsam
+    - Ich bin so alleine
+    - Ich bin wirklich einsam
+    - Ich fühle mich einsam
+    - Ich bin ein Einzelgänger
+    - Ich habe keine Gesellschaft
+    - Ich habe sonst niemanden
+    - Ich bin immer alleine
+    - Ich bin allein
+    - Bin ganz alleine
+    - Ich lebe alleine
+    - Ich bin ganz allein
+    - Ich habe mich daran gewöhnt, alleine zu leben
+    - Ich glaube, ich habe zu lange alleine gelebt
+    - Einer der Nachteile des Alleinlebens ist, dass Sie niemanden haben, mit dem Sie sprechen können
+    - Ich bin immer noch allein
+    - Ich lebe ganz alleine in dieser Stadt
+    - Ich bin es gewohnt, alleine zu leben
+- intent: chitchat/need_bot_help
+  examples: |
+    - Ich brauche deine Hilfe
+    - Ich brauche dich etwas für mich zu tun
+    - Ich brauche eine Hand
+    - wirst du mir helfen
+    - kannst du etwas für mich machen
+    - hilf mir bei einem Problem
+    - können Sie mir helfen
+    - Hilf mir
+    - Unterstützung
+    - Ich brauche Hilfe
+    - ihr könnt mir helfen
+    - Kannst du mir mit etwas helfen
+    - kannst du helfen
+    - helfen
+    - kannst du mir helfen
+    - Du hilfst mir
+    - hilfst du mir
+    - Könnten Sie mir helfen?
+    - Kannst du mir helfen
+    - brauchen Sie Hilfe
+    - Ich brauche dich
+    - Kannst du mir jetzt helfen?
+    - Ich will deine Hilfe
+    - brauche deine Hilfe
+    - assistiere mir
+    - kannst du mir damit helfen
+    - Hilfe
+    - Ich brauche dich jetzt
+    - könntest du mir helfen
+    - Kannst du mir helfen?
+    - sos
+    - willst du mir helfen
+    - Bitte hilf mir
+    - kannst du uns helfen
+    - tu mir einen Gefallen
+    - Wirst du mir helfen?
+    - Bist du bereit meine Frage zu beantworten?
+    - Ich brauche einige Details
+    - Ich brauche einige Informationen
+    - Ich brauche deine Hilfe, um Informationen zu bekommen
+    - Kannst du mir ein paar Infos geben?
+    - ich möchte etwas
+    - Ich möchte einige Details wissen
+    - Geben Sie einige Details an
+    - Kannst du ein paar Details für mich holen?
+    - Würde es Ihnen etwas ausmachen, mir einige Details zu geben?
+    - ich will Fragen zu pr1 stellen?
+    - ich brauch Hilfe bei der Vorlesung PR1 vom Herrn Fischer?
+    - ich brauch Hilfe wegen der Vorlesung Hs Mannheim
+    - ich will sachen zu pr1 wissen
+    - ich will fragen zu der vorlesung programmieren 1 stellen
+    - ich brauch hilfe in programmieren 1
+    - ich brauche deine hilfe
+    - Bist du beschäftigt?
+    - Hast du viel zu tun?
+    - bist du sehr beschäftigt?
+    - Bist du gerade sehr beschäftigt?
+    - bist du so beschäftigt?
+    - arbeitest du?
+    - Wie beschäftigt bist du?
+    - Du bist sehr beschäftigt
+    - arbeitest Du jetzt?
+    - Arbeitest du heute?
+    - warst du beschäftigt
+    - Du bist beschäftigt
+    - arbeitest du noch
+    - Du scheinst beschäftigt zu sein
+    - Sie scheinen sehr beschäftigt zu sein
+    - Du siehst beschäftigt aus
+    - Du wirst beschäftigt sein
+    - Bist du nicht beschäftigt?
+    - hast du zeit?
+    - was kannst du tun?
+    - Was kann ich tun?
+    - Was ist deine Fähigkeit?
+    - Welche Fähigkeit besitzen Sie?
+    - Was kannst du für mich tun?
+    - Was können Sie für mich bereitstellen?
+    - Was kannst du tun?
+    - Was machst du alles?
+    - was tust du?
+    - was kannst du für mich tun?
+    - Was kannst du alles tun?
+    - Was sind deine Eigenschaften?
+    - was kannst du
+    - Lass uns etwas besprechen
+    - Lassen Sie uns eine Diskussion haben
+    - kann ich Sprechen
+    - Kann ich anfangen zu sprechen?
+    - können wir reden
+    - Rede mit mir
+    - Lass uns reden
+    - Ich möchte mit dir reden
+    - Ich muss mit Ihnen reden
+    - Ich will mit dir sprechen
+    - können wir uns unterhalten
+    - Ich rede gern mit dir
+    - Sprich mit mir
+    - Willst du jetzt reden
+    - Kann ich jetzt reden?
+    - Können wir hier reden?
+    - Ich bin bereit zu reden
+    - Ich rede gerne
+    - Kann ich mit dir reden?
+    - Komm schon, rede mit mir
+- intent: chitchat/my_friend
+  examples: |
+    - Ich möchte einen Freund wie dich haben
+    - Wir sind die besten Freunde aller Zeiten
+    - sind wir Freunde
+    - Ich möchte dein Freund sein
+    - Ich bin dein Freund
+    - wir sind beste Freunde
+    - du bist mein Freund
+    - du bist mein bester Freund
+    - Du bist mein Bestie
+    - Du bist mein lieber Freund
+    - Du bist mein Freund aus Kindertagen
+    - Du und ich sind Freunde
+    - Sind wir beste Freunde?
+    - sind wir immer noch Freunde
+    - bist du mein bester Freund
+    - bist du mein Freund
+    - wir sind Freunde
+    - du bist ein guter Freund
+    - Du bist mein guter Freund
+    - du bist mein einziger Freund
+    - sei mein Freund
+    - wirst du mein Freund sein
+    - können Sie mein Freund sein
+    - können wir Freunde sein
+    - willst du mein Freund sein
+    - Wirst du mein bester Freund sein
+    - kannst du mein bester Freund sein
+    - Lass uns Freunde sein
+    - Willst du mein bester Freund sein?
+    - möchten Sie mein Freund sein
+    - Ich möchte, dass du mein Freund bist
+    - Können wir beste Freunde sein
+    - Würdest du mein Freund sein?
+    - Könntest du mein Freund sein?
+    - will mein Freund sein
+    - sei mein bester Freund
+- intent: chitchat/excited
+  examples: |
+    - Ich freue mich
+    - Ich bin sehr aufgeregt
+    - Wie aufgeregt ich bin
+    - Ich bin begeistert
+    - Ich freue mich darauf, mit Ihnen zu arbeiten
+    - Ich freue mich darauf, unsere Freundschaft zu beginnen
+    - Ich freue mich sehr, mit Ihnen zu sprechen
+    - Ich bin verdammt aufgeregt
+    - Ich bin hochgespielt
+    - Ich war aufgeregt
+    - Es war aufregend
+    - Das war aufregend
+    - Wie aufregend!
+    - Ich freue mich auf morgen
+    - Es war sehr aufregend! Ich möchte diese Funktion wieder verwenden
+    - Ich bin ziemlich aufgeregt darüber
+    - Es macht Spaß und ist aufregend
+- intent: chitchat/how_are_you
+  examples: |
+    - Wie ist dein Morgen bisher?
+    - Wie geht es dir?
+    - Wie läuft dein Tag
+    - ist alles in Ordnung
+    - Wie geht es Ihnen?
+    - Wie läuft es?
+    - geht es dir gut
+    - bist du in Ordnung?
+    - wie geht es dir
+    - wie geht es dir?
+    - Ist alles in Ordnung
+    - Wie geht es Ihnen heute?
+    - Wie geht's?
+    - wie fühlst du dich?
+    - Wie ist es dir gegangen?
+    - Wie gehts?
+    - Wie geht es Heute
+    - Wie läuft dein Tag?
+    - Wie ist dein Abend
+    - wie war dein Tag
+    - hast du einen guten Tag
+    - Ich hoffe, dein Tag läuft gut
+    - Ich hoffe, Sie haben einen schönen Abend
+    - Wie ist das Leben?
+    - Es geht mir gut und Ihnen
+    - wie ist dein Leben
+    - Wie war dein Tag
+    - Wie ist dein Morgen
+    - Wie war dein Tag?
+    - wie ist es mit Ihnen?
+    - Wie ist dein Tag?
+    - wie dein Tag verläuft
+    - Wie ist dein Tag
+    - wie geht es dir heute Morgen
+    - Wie geht es dir
+    - wie gehts dir
+    - Was denkst du?
+    - was ist passiert
+    - Was ist los
+    - Was geht
+    - Whazzup
+    - gut was geht
+    - Ich sagte, was geht
+    - Was ist dann los?
+    - Was zittert
+    - wassup
+    - Was tust du?
+    - was ist los
+    - Was knackt
+    - Halli-Hallo was ist los
+    - was steht heute an
+    - Oh was ist passiert?
+    - Was hast du vor?
+    - Hey Kumpel
+    - hey bro
+    - also was geht
+    - Was tun Sie?
+    - Was ist in diesen Tagen mit dir los?
+    - jo was geht
+    - jo
+    - Hallo wie gehts
+- intent: chitchat/ready
+  examples: |
+    - bist du bereit?
+    - Bist du heute bereit?
+    - Bist du jetzt bereit?
+    - Bist du heute Nacht bereit?
+    - Warst du bereit?
+    - bereit?
+    - jetzt bereit?
+    - bereit sein?
+    - können wir starten?
+    - Sind wir bereit?
+    - Bist du nicht bereit?
+    - Seid ihr alle bereit?
+    - Ich denke du bist bereit
+    - Warum bist du nicht bereit?
+    - Du solltest besser bereit sein
+    - Bist du bereit für mehr?
+    - Wir sind bereit, nicht wahr?
+- intent: chitchat/angry
+  examples: |
+    - Ich bin sauer
+    - Ich bin wütend
+    - Ich bin verärgert
+    - Ich bin sauer auf dich
+    - Ich bin wütend auf dich
+    - ich bin sauer
+    - Du hast mich angepisst
+    - Ich bin böse auf dich
+    - Ich bin stinksauer
+    - Ich wurde wütend
+    - Ich war sauer
+    - Ich war sehr wütend
+    - Wetten, dass ich wütend bin?
+    - Das hat mich wütend gemacht
+    - Du hast mich wütend gemacht
+    - Darüber bin ich immer noch wütend
+- intent: chitchat/tired
+  examples: |
+    - Ich warte
+    - warte noch
+    - Ich werde warten
+    - Ich kann nicht mehr warten
+    - Wie lange muss ich warten?
+    - Lass mich nicht so warten
+    - Ich warte immer noch
+    - Ich warte auf dich
+    - Ich warte lange
+    - Ich werde auf dich warten
+    - mit dem Warten fertig
+    - Soll ich hier auf dich warten?
+    - Wie lange müssen wir warten?
+    - Lass mich nie wieder warten
+    - Ich habe lange gewartet
+    - Ich habe zu lange darauf gewartet
+    - Ich konnte keine Sekunde länger warten
+    - Ich habe hier auf dich gewartet - ich bin erschöpft
+    - Ich habe überarbeitet
+    - Ich bin müde
+    - Ich bin erschöpft
+    - Ich werde müde
+    - Ich bin so müde
+    - Ich bin völlig ausgelaugt
+    - Ich bin sehr müde
+    - ich war müde
+    - ich bin müde
+    - Ich bin todmüde
+    - Ich bin ein bisschen Reifen
+    - Ich war sehr müde
+    - Ich bin wirklich müde
+    - Ich bin schrecklich müde
+    - Ich bin irgendwie so müde
+    - Ich bin etwas müde
+    - Ich habe es satt zu warten
+    - Ich bin Schlaflosigkeit
+    - Ich kann nicht schlafen
+    - Ich kann nicht einschlafen
+    - Ich bin schlaflos
+    - Ich bin hellwach
+    - Ich konnte nicht schlafen
+    - Ich kann einfach nicht schlafen
+    - Ich kann überhaupt nicht schlafen
+    - Ich bin nicht schlafen gegangen
+    - Ich konnte einfach nicht schlafen
+    - Ich schlafe nicht gut
+    - Ich versuche etwas Schlaf zu bekommen
+    - Ich kann nachts nicht schlafen
+    - Ich konnte nicht einschlafen
+    - Ich habe nicht viel geschlafen
+- intent: chitchat/bot_challenge
+  examples: |
+    - Du bist ein Chatbot
+    - Du bist ein Bot
+    - Bist du ein Chatbot?
+    - Bist du ein Bot
+    - Bist du nur ein Bot?
+    - Bist du ein Roboter
+    - Bist du ein Programm?
+    - Du bist ein Roboter
+    - Du bist eine KI
+    - Bist du ein künstliche intelligenz?
+    - Bist du eine KI?
+    - Du bist ein Programm
+    - Du bist nur ein Bot
+    - Sie sind eine Konversations-KI
+    - arbeitest du?
+    - wo arbeitest du?
+    - wo ist deine Arbeit?
+    - wo ist dein Büro?
+    - Wo ist Ihr Bürostandort?
+    - Ihr Bürostandort?
+    - Wo befindet sich Ihr Büro?
+    - Was ist deine Arbeit?
+    - Ort, an dem Sie arbeiten?
+    - Ihr Arbeitsplatz?
+    - Was arbeitest du?
+    - Hast du einen Job?
+    - Hast du einen Job bekommen?
+    - Hast du einen Job gefunden?
+    - Ich hoffe du bekommst den Job
+    - Sie haben einen Job, nicht wahr?
+    - Würdest du hier geboren?
+    - Wo bist du geboren
+    - Was ist dein Land?
+    - woher kommst du
+    - Wo wurdest du geboren
+    - Wo ist dein Ursprung?
+    - von wo bist du
+    - Bist du von weit her?
+    - Was ist deine Heimat?
+    - Lass mich wissen, woher du kommst
+    - deine Mutter?
+    - du bist echt
+    - Du bist keine Fälschung
+    - Bist du echt?
+    - Du bist so real
+    - Ich denke du bist echt
+    - Ich glaube nicht, dass du falsch bist
+    - Ich nehme an, du bist echt
+    - Ich bin froh, dass du echt bist
+    - bist du eine reale Person?
+    - Bist du ein echter Mensch?
+    - Du bist eine echte Person
+    - du bist nicht echt
+    - wo wohnst du
+    - In welcher Stadt lebst du
+    - Dein Wohnort
+    - Deine Heimatstadt?
+    - Was ist deine Heimatstadt
+    - Ist es deine Heimatstadt?
+    - wo liegt deine Heimatstadt
+    - Erzähl mir von deiner Stadt
+    - Was ist deine Stadt
+    - Was ist dein Wohnsitz?
+    - Was ist deine Stadt?
+    - Was ist dein Zuhause?
+    - wo ist dein Zuhause
+    - Wo ist dein Wohnsitz?
+    - Wo ist dein Zuhause?
+    - Wo ist deine Heimatstadt?
+    - wo ist dein Haus
+    - wo Du wohnst
+    - deine Stadt
+    - Was ist deine Heimatstadt?
+    - wo wohnst du?
+    - wo lebst du?
+    - dein Geburtstag
+    - wann ist dein Geburtstag
+    - Wann feiern Sie Ihren Geburtstag?
+    - Wann hast du Geburtstag?
+    - Datum Ihres Geburtstages
+    - Wann sind Sie geboren worden
+    - wann hast du Geburtstag
+    - Kann ich deinen Geburtstag kennen?
+    - Erzähl mir von deinem Geburtstag
+    - Wann war der Tag, an dem du geboren wurdest?
+    - Ich möchte Ihr Geburtsdatum wissen
+    - Wann ist dein Geburtsdatum?
+    - Dein Geburtsdatum?
+    - willst du essen
+    - Bist du hungrig
+    - möchtest du was essen
+    - Du bist hungrig
+    - Du bist so hungrig
+    - Du bist sehr hungrig
+    - Sie könnten hungrig sein
+    - Du bist wirklich hungrig
+    - kannst du essen?
+    - Wie wird man essen, wenn man hungrig ist?
+    - Kannst du hungrig sein?
+    - wie isst du?
+    - Hast du Hunger?
+    - Stirbst du vor Hunger?
+    - Wie alt sind Sie?
+    - Wie alt bist du?
+    - Wie alt ist deine Plattform?
+    - Bist du 10 Jahre alt?
+    - Ich würde gerne dein Alter wissen
+    - Alter von dir
+    - dein Alter
+    - Wie alt bist du
+    - Sag mir dein Alter
+    - Wie alt sind Sie
+    - Alter
+- intent: chitchat/mood_great
+  examples: |
+    - ich bin sehr glücklich
+    - Ich bin fröhlich
+    - Ich freue mich, dich zu sehen
+    - glücklich
+    - Wenn du glücklich bist, bin ich glücklich
+    - Ich freue mich für dich
+    - Ich helfe gerne
+    - Du hast mich sehr glücklich gemacht
+    - Ich freue mich, Sie zu sehen
+    - Ich bin froh mit dir zu sprechen
+    - Ich war der glücklichste Mann der Welt
+    - Ich bin gerade wirklich glücklich
+    - Ich bin wirklich froh, dass ich dich getroffen habe
+    - Ich fühle mich am glücklichsten, wenn ich mit dir chatte
+    - Niemand außer dir kann mich glücklich machen
+    - Immer wenn ich dich sehe, fühle ich mich glücklich
+    - Dein Lächeln macht mich immer glücklich
+    - Ich bin glücklich
+    - Ich war so glücklich
+    - mir geht es gut
+    - Mir geht es einfach großartig
+    - Ich bin wohlauf
+    - Mir geht's gut
+    - Mir geht es gut
+    - Mir geht es gut danke
+    - Ich bin super gut
+    - Ich habe gute Laune
+    - Mir geht es wirklich gut
+    - gut
+    - Das ist gut
+    - Ich fühle mich gut
+    - Das fühlt sich gut an
+    - Ich fühle mich sehr gut
+    - Ich bin ziemlich gut
+    - Heute geht es mir gut
+    - Ich bin wirklich gut
+    - Mir geht es Top
+- intent: chitchat/who_are_you
+  examples: |
+    - Wer bist du?
+    - alles über dich
+    - wie ist deine Persönlichkeit
+    - wie ist dein Charakter
+    - beschreib dich mal
+    - beschreiben Sie sich
+    - was bist du
+    - Sag etwas über dich
+    - Stelle dich vor
+    - Beschreibe dich selbst
+    - über dich
+    - Erzähl mir was von dir
+    - erzähl mir was über dich
+    - Ich möchte mehr über Sie wissen
+    - Ich möchte dich besser kennenlernen
+    - rede ein paar Sachen über dich
+    - Erzähl mir ein paar Sachen über dich
+    - sprich über dich selbst
+    - Warum bist du hier
+    - Erzähl mir von deiner Persönlichkeit
+    - wie heißt du
